@@ -106,14 +106,19 @@ ul {
     border-radius: 12px;
 }
 
-
 .pics .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
     min-height: 300px;
+}
+
+.pics .container h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
 }
 
 .pics .container .images {
@@ -122,26 +127,48 @@ ul {
     align-items: center;
 }
 
+.images .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.images .card p {
+    margin: 5px 0px;
+}
+
 .images img {
-    max-width: 200px;
-    border-radius: 12px;
-    border: 3px solid #3882f6;
+    max-height: 160px;
+    max-width: 160px;
+    border-radius: 20px;
+    border: 4px solid #3882f6;
 }
 
 .quote .container {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
     min-height: 300px;
-    border: solid hotpink;
+    max-width: none;
 }
 
 .qbox {
-    border: solid blue;
     font-size: 36px;
     font-weight: 100;
-    font-style: italic;
     color: #1f2937;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.qbox p {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .action .container {
